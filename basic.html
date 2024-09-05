@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript basics</title>
+</head>
+
+<body>
+    <h1>Javascript basics</h1>
+    <ul>
+        <li>Spring</li>
+        <li>Summer</li>
+        <li>Fall</li>
+        <li>Winter</li>
+    </ul>
+    <script>
+        /*Dont
+       const ws = new WeakSet([1, 2, 3, 4, 5, true, false, false, {}, {}, "hello", "HELLO"])
+       */ 
+      /*
+       const ws = new WeakSet()
+       //objects only
+       let value1 = { "value1":1}
+       let value2 = { "value1":2}
+       let value3 = { "value1":3}
+       ws.add(value1)
+       ws.add(value2)
+       console.log(ws)
+
+       console.log(ws.has(value1))
+       console.log(ws.has(value3))
+
+       ws.delete(value2)
+
+       setInterval(() => console.log(ws), 1000)
+
+       setTimeout(() => {
+        value1=null,
+        value2=null,
+        value3=null 
+       }, 5000)
+       */ 
+
+
+       /*
+       const wm = new WeakMap([
+        ["name", "Ivan"], ["age", 7], ["animal", "dog", [null, "null"]]
+       ])
+        */ 
+
+        const wm = new WeakMap()
+        let key1 = {}
+        let key2 = {}
+        let key3 = {}
+
+        wm.set(key1,1)
+        wm.set(key2,2)
+        wm.set(key3,3)
+        console.log(wm.has(key1))
+
+        console.log(wm.get(key1))
+
+        wm.delete(key2)
+
+        setInterval(() => console.log, 1000);
+
+        setTimeout(() => {
+            key1=null,
+            key2=null,
+            key3=null
+        }, 5000);
+
+    </script>
+</body>
+
+</html>
